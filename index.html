@@ -1,0 +1,117 @@
+
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Studio Barber</title>
+
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header>
+    <nav>
+        <h1>Studio Barber</h1>
+
+        <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#reservar">Reservar</a></li>
+        </ul>
+    </nav>
+    </header>
+
+    <main>
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+        <h2>Tu estilo comienza aquí</h2>
+
+        <p>Reserva tu cita de manera rápida y sencilla.</p>
+
+        <a href="#reservar" class="button"> Reservar cita </a>
+        </div>
+    </section>
+
+    <section id="servicios" class="services">
+        <h2>Nuestros servicios</h2>
+
+        <div class="services-container">
+        <article class="service-card">
+            <h3>Corte de cabello</h3>
+
+            <p>Corte personalizado de acuerdo con tu estilo.</p>
+
+            <strong>$150</strong>
+        </article>
+
+        <article class="service-card">
+            <h3>Corte + barba</h3>
+
+            <p>Corte de cabello acompañado de arreglo de barba.</p>
+
+            <strong>$220</strong>
+        </article>
+
+        <article class="service-card">
+            <h3>Arreglo de barba</h3>
+
+            <p>Perfilado y arreglo profesional de barba.</p>
+
+            <strong>$100</strong>
+        </article>
+        </div>
+    </section>
+
+    <section id="reservar" class="booking">
+        <h2>Reserva tu cita</h2>
+
+        <form id="booking-form">
+        <label for="name"> Nombre </label>
+
+        <input
+            type="text"
+            id="name"
+            placeholder="Escribe tu nombre"
+            required
+        />
+
+        <label for="service"> Servicio </label>
+
+        <select id="service" required>
+            <option value="">Selecciona un servicio</option>
+
+            <option value="corte">Corte de cabello</option>
+
+            <option value="corte-barba">Corte + barba</option>
+
+            <option value="barba">Arreglo de barba</option>
+        </select>
+
+        <label for="date"> Fecha </label>
+
+        <input type="date" id="date" required />
+
+        <label > Horarios Disponibles </label>
+        <div id="button-horas"></div>
+
+        <button type="submit">Confirmar cita</button>
+        </form>
+    </section>
+    </main>
+
+    <section class="appointments">
+    <h2>Citas registradas</h2>
+
+    <div id="appointments-list"></div>
+    </section>
+
+    <footer>
+    <p>© 2026 Studio Barber</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css" />
+</body>
+</html>
