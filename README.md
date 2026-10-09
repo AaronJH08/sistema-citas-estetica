@@ -2,6 +2,8 @@ Studio Barber es una aplicación web que permite gestionar citas de una barberí
 
 El sistema permite seleccionar servicios, horarios disponibles y administrar las citas almacenando la información localmente en el navegador.
 
+Demo: https://aaronjh08.github.io/sistema-citas-estetica/
+
 ## Funcionalidades
 
 - Registro de citas
